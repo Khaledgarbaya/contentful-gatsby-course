@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: #141618;
+}
+.header__container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  background: transparent;
+  color: hsla(0, 0%, 100%, 0.9);
+  text-transform: none;
+  text-align: center;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 400;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  transition: all 0.25s ease;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
