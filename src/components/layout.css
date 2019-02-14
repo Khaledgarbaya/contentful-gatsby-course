@@ -4,11 +4,20 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
-  background-color: #f8f8f8;
+  background-color: rgb(244, 247, 249);
 }
 main {
   padding-top: 5em;
+  box-sizing: border-box;
+  color: rgb(99, 118, 141);
+  display: block;
+  font-family: -apple-system, system-ui, 'avenir next', avenir, 'helvetica neue',
+    helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+  line-height: 18.4px;
+  padding-top: 32px;
+  text-size-adjust: 100%;
+  width: 900px;
+  -webkit-font-smoothing: antialiased;
 }
 article,
 aside,
@@ -621,4 +630,31 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+.lessons {
+  width: 900px;
+  margin: 0 auto;
+}
+.lessons__item {
+  border-bottom-color: rgb(226, 227, 231);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left-color: rgb(226, 227, 231);
+  border-right-color: rgb(226, 227, 231);
+  border-top-color: rgb(244, 247, 249);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 30px -15px;
+  box-sizing: border-box;
+  color: rgb(99, 118, 141);
+  display: block;
+  font-family: -apple-system, system-ui, 'avenir next', avenir, 'helvetica neue',
+    helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+  height: 102px;
+  line-height: 18.4px;
+  text-size-adjust: 100%;
+  width: 935.391px;
+  -webkit-font-smoothing: antialiased;
 }

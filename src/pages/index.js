@@ -5,9 +5,11 @@ import Layout from '../components/layout'
 
 const IndexPage = ({ data }) => (
   <Layout>
-    {data.allContentfulLesson.edges.map(({ node }) => (
-      <li>{node.title}</li>
-    ))}
+    <div className="lessons">
+      {data.allContentfulLesson.edges.map(({ node }) => (
+        <div className="lessons__item">{node.title}</div>
+      ))}
+    </div>
   </Layout>
 )
 
