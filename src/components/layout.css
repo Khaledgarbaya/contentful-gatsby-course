@@ -634,6 +634,7 @@ pre tt:after {
 .lessons {
   width: 900px;
   margin: 0 auto;
+  padding: 100px;
 }
 .lessons__item {
   border-bottom-color: rgb(226, 227, 231);
@@ -650,9 +651,11 @@ pre tt:after {
   box-sizing: border-box;
   color: rgb(99, 118, 141);
   display: block;
+  padding: 10px;
   font-family: -apple-system, system-ui, 'avenir next', avenir, 'helvetica neue',
     helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
   height: 102px;
+  margin-bottom: 10px;
   line-height: 18.4px;
   text-size-adjust: 100%;
   width: 935.391px;

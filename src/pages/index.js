@@ -1,13 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
+import LessonItem from '../components/lesson-item'
 import Layout from '../components/layout'
 
 const IndexPage = ({ data }) => (
   <Layout>
     <div className="lessons">
       {data.allContentfulLesson.edges.map(({ node }) => (
-        <div className="lessons__item">{node.title}</div>
+        <LessonItem lesson={node}/>
       ))}
     </div>
   </Layout>
@@ -19,6 +20,10 @@ export const pageQuery = graphql`
       edges {
         node {
           title
+          slug
+          description {
+            description
+          }
         }
       }
     }
