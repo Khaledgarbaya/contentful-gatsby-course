@@ -63,7 +63,7 @@ const Header = ({ siteTitle }) => (
           />
         </g>
       </svg>
-      <Link class="link" to="/instructors">
+      <Link className="link" to="/instructors">
         Instructors
       </Link>
     </div>

@@ -636,7 +636,7 @@ pre tt:after {
   margin: 0 auto;
   padding: 100px;
 }
-.lessons__item {
+.lessons__item, .instructors__item {
   border-bottom-color: rgb(226, 227, 231);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
