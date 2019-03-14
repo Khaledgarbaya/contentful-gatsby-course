@@ -661,3 +661,7 @@ pre tt:after {
   width: 935.391px;
   -webkit-font-smoothing: antialiased;
 }
+.lesson__details, .instructor__details {
+  padding: 2em;
+  margin-top: 2em;
+}
