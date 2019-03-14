@@ -5,6 +5,7 @@ import './header.css'
 const Header = ({ siteTitle }) => (
   <header className="header">
     <div className="header__container">
+      <Link to='/'>
       <svg
         width="136"
         height="34"
@@ -63,6 +64,7 @@ const Header = ({ siteTitle }) => (
           />
         </g>
       </svg>
+      </Link>
       <Link className="link" to="/instructors">
         Instructors
       </Link>
