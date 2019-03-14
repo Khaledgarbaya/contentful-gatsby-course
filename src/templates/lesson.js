@@ -1,12 +1,14 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-
+import Layout from '../components/layout'
 function Lesson({ data }) {
   return (
-    <div className="lesson__details">
+    <Layout>
+      <div className="lesson__details">
         <h2>{data.contentfulLesson.title}</h2>
         <div>{data.contentfulLesson.description.description}</div>
-    </div>
+      </div>
+    </Layout>
   );
 }
 
