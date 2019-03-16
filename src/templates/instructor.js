@@ -8,7 +8,10 @@ function Instructor({ data }) {
     <Layout>
       <div className="md:flex flex-row">
         <Img 
-          className='shadow-md' 
+          className='shadow-md'
+          style={{
+            width: '100%'
+          }}
           resolutions={{
             ...data.contentfulInstructor.avatar.resolutions,
             base64: data.contentfulInstructor.avatar.sqip.dataURI
