@@ -1,11 +1,10 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
-import './header.css'
 const Header = ({ siteTitle }) => (
-  <header className="header">
-    <div className="header__container">
-      <Link to='/'>
+  <header className="bg-black">
+    <div className="container flex flex-row items-center mx-auto px-4 py-4 justify-between">
+      <Link to='/' className='block'>
       <svg
         width="136"
         height="34"
@@ -65,7 +64,8 @@ const Header = ({ siteTitle }) => (
         </g>
       </svg>
       </Link>
-      <Link className="link" to="/instructors">
+      <Link className="link" to="/instructors"
+        className='block no-underline hover:underline text-white'>
         Instructors
       </Link>
     </div>
