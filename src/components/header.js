@@ -64,7 +64,8 @@ const Header = ({ siteTitle }) => (
         </g>
       </svg>
       </Link>
-      <Link className="link" to="/instructors"
+      <Link 
+        to="/instructors"
         className='block no-underline hover:underline text-white'>
         Instructors
       </Link>

@@ -22,6 +22,11 @@ export const pageQuery = graphql`
           id
           fullName
           slug
+          avatar {
+            file {
+              url
+            }
+          }
           bio {
             bio
           }
