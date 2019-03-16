@@ -10,7 +10,7 @@ function Instructor({ data }) {
         <Img 
           className='shadow-md'
           style={{
-            width: '100%'
+            width: '100%' // important for respect the flexing
           }}
           resolutions={{
             ...data.contentfulInstructor.avatar.resolutions,
