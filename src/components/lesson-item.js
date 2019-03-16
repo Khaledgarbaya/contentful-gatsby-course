@@ -6,7 +6,7 @@ function LessonItem({ lesson }) {
     <div className='w-full lg:flex px-4 py-4'>
 
       <div className='h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden' style={{
-        backgroundImage: `url(https:${lesson.image.file.url}?w=192&h=272)`}} title={lesson.title}>
+        backgroundImage: `url(https:${lesson.image.file.url}?w=192&fit=thumb)`}} title={lesson.title}>
   </div>
     
   <div className="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">

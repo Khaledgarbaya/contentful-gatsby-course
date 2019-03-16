@@ -24,7 +24,7 @@ const Layout = ({ children }) => (
         >
 
           <main className='container mx-auto px-4 py-4'>{children}</main>
-          <footer>
+          <footer className='flex justify-center items-center font-sans text-xs border-t pt-6 pb-16'>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
