@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
+import LessonItem from '../components/lesson-item';
 
 function Instructor({ data }) {
   return (
@@ -23,6 +24,12 @@ function Instructor({ data }) {
           <div>{data.contentfulInstructor.bio.bio}</div>
         </div>
       </div>
+      <div className="border-t my-6">
+        <h2 className='text-4xl text-grey-dark my-6'>Lessons</h2>
+        {data.contentfulInstructor.lesson.map((node) => (
+          <LessonItem lesson={node} key={node.id}/>
+        ))}
+        </div>
     </Layout>
   );
 }
@@ -44,6 +51,19 @@ query instructorQuery($slug: String!){
       }
       twitter
       website
+      lesson {
+        id
+        title
+        slug
+        image {
+          file {
+            url
+          }
+        }
+        description {
+          description
+        }
+      }
   }
 }
 `
