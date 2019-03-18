@@ -11,7 +11,8 @@ function Instructor({ data }) {
         <Img 
           className='shadow-md'
           style={{
-            width: '100%' // important for respect the flexing
+            width: '100%', // important for respect the flexing
+            maxWidth:'500px'
           }}
           resolutions={{
             ...data.contentfulInstructor.avatar.resolutions,
@@ -24,12 +25,14 @@ function Instructor({ data }) {
           <div>{data.contentfulInstructor.bio.bio}</div>
         </div>
       </div>
-      <div className="border-t my-6">
-        <h2 className='text-4xl text-grey-dark my-6'>Lessons</h2>
-        {data.contentfulInstructor.lesson.map((node) => (
-          <LessonItem lesson={node} key={node.id}/>
-        ))}
-        </div>
+      {
+       data.contentfulInstructor.lesson &&  <div className="border-t my-6">
+          <h2 className='text-4xl text-grey-dark my-6'>Lessons</h2>
+          {data.contentfulInstructor.lesson.map((node) => (
+            <LessonItem lesson={node} key={node.id}/>
+          ))}
+          </div>
+      }
     </Layout>
   );
 }
