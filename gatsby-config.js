@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`
+    title: `Contentful eggheadio`,
+    description: `This is an example of egghea.io built using Gatsby and Contentful`,
+    author: `@khaked_garbaya`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

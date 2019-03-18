@@ -3,10 +3,15 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import LessonItem from '../components/lesson-item';
+import SEO from '../components/seo'
 
 function Instructor({ data }) {
   return (
     <Layout>
+      <SEO 
+        title={data.contentfulInstructor.fullName}
+        description={data.contentfulInstructor.bio.bio} 
+      />
       <div className="md:flex flex-row">
         <Img 
           className='shadow-md'
